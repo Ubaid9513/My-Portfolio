@@ -1,0 +1,5 @@
+.nav-bar {
+    margin-left: 60%;
+    display: flex;
+    gap: 10px;
+}
