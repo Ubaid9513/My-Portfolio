@@ -11,38 +11,60 @@
 
 <body>
     <!-- Create Navbar -->
-    <div class="container bg-primary">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold fs-3" href="#">Ubaid Aslam</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav nav-bar">
-                        <li class="nav-item">
-                            <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fw-bold" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fw-bold" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fw-bold" aria-disabled="true">Contact</a>
-                        </li>
-                    </ul>
+    <section class="container-fluid pb-5 bg-black hero_section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold fs-3 text-white" href="#">Ubaid Aslam</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav-bar">
+                            <li class="nav-item fs-5">
+                                <a class="nav-link active fw-bold text-white" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a class="nav-link active fw-bold text-white" href="#">About</a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a class="nav-link active fw-bold text-white" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item fs-5">
+                                <a class="nav-link active fw-bold text-white" aria-disabled="true">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+            <!-- start Hero section -->
+
+            <section class="mt-5 pt-3" id="hero_header">
+                <h1 class="text-white mt-5">Hello, <br> I'am <span> Muhammed Ubaid Aslam</span></h1>
+                <h3 class="text-white">Become a <span class="auto_typed"></span></h3>
+            </section>
+        </div>
+    </section>
+    <!-- close Hero section -->
+    <!-- start about section -->
+
+    <section class="container about_section mt-5">
+        <div class="row bg-danger">
+            <div class="col about_left bg-secondary">
+
             </div>
-        </nav>
-    </div>
+            <div class="col about_right"></div>
+        </div>             
+
+    </section>
+    <!-- close about section -->
 
 
 
 
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="app.js"></script>
 </body>
 
 </html>

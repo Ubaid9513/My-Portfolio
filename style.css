@@ -1,5 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+.hero_section {
+  background-image: url("./images/wp6412485.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 593px;
+}
 .nav-bar {
     margin-left: 60%;
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
+}
+.nav-bar li {
+    border-bottom: 2px solid #fff;
+}
+#hero_header h1 {
+    font-size: 53px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 700;
+}
+#hero_header span {
+    color: #ff0000;
+}
+#hero_header h3 {
+    font-family: "Poetsen One", sans-serif;
+
+}
+.about_section {
+  height: 500px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+.about_left {
+  height: 300px;
 }
