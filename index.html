@@ -4,76 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Css file link -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.css">
+    <!-- mediaquery file link -->
     <link rel="stylesheet" href="media.css">
+    <!-- Bootstrap file link -->
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 
-<body>
-    <!-- Create Navbar -->
-    <section class="container-fluid hero_section">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand fw-bold fs-3" id="nav-icon" href="#">Ubaid Aslam</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav nav-bar">
-                            <li class="nav-item fs-5">
-                                <a class="nav-link active fw-bold text-white nav-a" href="#">Home</a>
-                            </li>
-                            <li class="nav-item fs-5">
-                                <a class="nav-link active fw-bold text-white nav-a" href="#">About</a>
-                            </li>
-                            <li class="nav-item fs-5">
-                                <a class="nav-link active fw-bold text-white nav-a" href="#">Projects</a>
-                            </li>
-                            <li class="nav-item fs-5">
-                                <a class="nav-link active fw-bold text-white nav-a" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+<body id="page-top">
+    <div id="home">
+        <!--/ Nav-bar /-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container position-relative" id="nav-bar">
+                <a class="navbar-brand fs-2 fw-bold text-light" href="#page-top">Ubaid Aslam</a>
+                <button class="navbar-toggler border border-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="./images/icon.png" alt="icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav fs-5 fw-bold gap-4" id="nav-ul">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <!--/ Nav-bar End /-->
+    </div>
+    <div class="container">
+        <div class="row flex-column gap-2" id="home_text">
+            <h1 class="col text-white mt-5 fw-bold">Hello, <br> I'am <span> Muhammed Ubaid Aslam</span></h1>
+            <h3 class="col text-white fw-bold">Become a <span class="auto_typed"></span></h3>
         </div>
-        <!-- start Hero section -->
-        <div class="container">
-            <section class="mt-5 pt-3" id="hero_header">
-                <h1 class="text-white mt-5">Hello, <br> I'am <span> Muhammed Ubaid Aslam</span></h1>
-                <h3 class="text-white">Become a <span class="auto_typed"></span></h3>
-            </section>
-        </div>
-    </section>
-    <!-- close Hero section -->
+    </div>
     <!-- start about section -->
 
-    <section class="container rounded-2 my-5 about_section">
+    <section class="container rounded-2 my-5 about_section" id="about">
         <div class="row">
-            <div class="col about_left">
+            <div class="col-sm-12 col-md-6 col-lg-6 about_left">
                 <div class="row">
-                    <div class="col col-lg-5 text-center px-5 py-5">
+                    <div class="col-sm-12 col-md-12 col-lg-5 text-center p-5 about_left_personal_img">
                         <img class="rounded-2" src="./images/My picture.jpg" width="150px" height="170px"
                             alt="my_picture">
                     </div>
-                    <div class="col col-lg-7 pt-5 ps-3">
-                        <p class="fw-bold mt-2 text-white">Name : <span class="fw-light">Muhammad Ubaid Aslam</span></p>
-                        <p class="fw-bold text-white">Profile : <span class="fw-light">Become a Full stack
+                    <div class="col-sm-12 col-md-12 col-lg-7 pt-5 ps-3 about_left_personal_info">
+                        <p class="fw-bold mt-2 ">Name : <span class="fw-light">Muhammad Ubaid Aslam</span></p>
+                        <p class="fw-bold">Profile : <span class="fw-light">Become a Full stack
                                 Developer</span></p>
-                        <p class="fw-bold text-white">Email : <span class="fw-light">shaikhubaid2345@gmail.com</span>
+                        <p class="fw-bold">Email : <span class="fw-light">shaikhubaid2345@gmail.com</span>
                         </p>
-                        <p class="fw-bold text-white">Contact : <span class="fw-light">(+92)3122039443</span></p>
+                        <p class="fw-bold info_p">Contact : <span class="fw-light">(+92)3122039443</span></p>
                     </div>
                 </div>
-                <div class="row skills">
+                <div class="row skills ps-5">
                     <div class="col">
-                        <h1 class="">Skills</h1>
+                        <h1 class="fw-bold">Skills</h1>
                         <!-- html  -->
                         <li class="mb-4">
-                            <h4 class="text-white">HTML</h4>
+                            <h4 class="">HTML</h4>
                             <div class="html-range">
                                 <p class="fs-4 fw-bold">95%</p>
                                 <div class="html-inner-range"></div>
@@ -81,7 +86,7 @@
                         </li>
                         <!-- css  -->
                         <li class="mb-4">
-                            <h4 class="text-white">CSS</h4>
+                            <h4 class="">CSS</h4>
                             <div class="css-range">
                                 <p class="fs-4 fw-bold">80%</p>
                                 <div class="css-inner-range"></div>
@@ -89,7 +94,7 @@
                         </li>
                         <!-- javascript  -->
                         <li class="mb-4">
-                            <h4 class="text-white">JAVASCRIPT</h4>
+                            <h4 class="">JAVASCRIPT</h4>
                             <div class="js-range">
                                 <p class="fs-4 fw-bold">55%</p>
                                 <div class="js-inner-range"></div>
@@ -98,17 +103,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col about_right">
-                <h1 class="about_h1">About me</h1>
-                <p class="fs-5 text-white">Let me share some Insights with you about "My Journey in Tech",
+            <div class="col-sm-12 col-md-6 col-lg-6 about_right">
+                <h1 class="about_h1 py-2 fw-bold">About me</h1>
+                <!-- <hr class="hr"> -->
+                <p id="about_right_p">Let me share some Insights with you about "My Journey in Tech",
                     <br>
-                    Hello! My name is "<span class="fw-bold">Mohammad Ubaid Aslam</span>" and I am a "<span
+                    Hello! My name is "<span class="fw-bold">Muhammad Ubaid Aslam</span>" and I am a "<span
                         class="fw-bold">Web and Mobile Application Developer</span>" . I am
                     mastering to create dynamic , reponsive and Interactive Web Applications .
                     <br><br>
-                    Let me share my bit small academic journey with you .My Academic journey starts at "<span class="fw-bold">Prince public
-                    secondary school</span>" where I
-                    completes my Matriculation and I then went to "<span class="fw-bold">Government Islamia Science college</span>.
+                    Let me share my bit small academic journey with you .My Academic journey starts at "<span
+                        class="fw-bold">Prince public
+                        secondary school</span>" where I
+                    completes my Matriculation and I then went to "<span class="fw-bold">Government Islamia Science
+                        college</span>.
                     <br><br>
                     Then , I went to "<span class="fw-bold">Saylani Mass IT Training, Institute</span>" to acquire
                     skills in Web Development and
@@ -124,7 +132,8 @@
 
 
 
-    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="app.js"></script>
 </body>

@@ -1,70 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  background-color: rgb(23, 23, 23) !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: rgb(225, 251, 251);
 }
-/* START HERO SECTION */
-.main {
-  position: fixed;
-}
-.hero_section {
+/* home section start */
+#home {
   background-image: url("./images/wp6412485.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 593px;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100vh;
 }
-#nav-icon {
-  text-decoration:3px underline #ff0000;
-  color: #fff;
+#nav-ul {
+  margin-left: 52.9%;
+  margin-top: 8px;
 }
-.nav-bar {
-  margin-left: 60%;
-  display: flex;
-  gap: 10px;
-}
-.nav-a {
-  text-decoration: none;
+#nav-ul a {
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
-.nav-a:before {
-  content:"";
+#nav-ul a:before {
+  content: "";
   position: absolute;
   left: 10;
   top: 80%;
   width: 0;
   height: 3px;
   background-color: #fff;
-  transition: all .4s linear;
+  transition: all 0.4s linear;
 }
-.nav-a:hover:before {
+#nav-ul a:hover:before {
   width: 70%;
   background-color: #ff0000;
   border-radius: 2px;
 }
-#hero_header h1 {
-  font-size: 3.5rem;
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 700;
+/* home text */
+#home_text {
+  position: absolute;
+  top: 20%;
 }
-#hero_header span {
+#home_text span {
+  /* color: #f83f1e; */
   color: #ff0000;
 }
-#hero_header h3 {
-  font-size: 2rem;
-  font-family: "Poetsen One", sans-serif;
-}
-/* CLOSE HERO SECTION */
+
+/* home section end */
 /* START ABOUT SECTION */
 
 .about_section {
-  /* background-color: #545454; */
-  background-color: #201e1e;
-
+  background-color: #f9f4f4;
+  box-shadow: 5px 5px 12px #ffffff;
 }
 .about_h1 {
   color: #ff0000;
-font-family: "Poetsen One", sans-serif;
-font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 .skills {
   height: 300px;
@@ -72,7 +64,6 @@ font-size: 3.5rem;
 }
 .skills h1 {
   color: #ff0000;
-  font-family: "Poetsen One", sans-serif;
   font-size: 3.5rem;
 }
 .skills li {
@@ -84,51 +75,61 @@ font-size: 3.5rem;
   height: 10px;
   background-color: #fff;
   position: relative;
+  border:.3px solid #000;
+  border-radius: 2px;
 }
 .html-range p {
   position: absolute;
-  color: #fff;
+  /* color: #fff; */
   right: 0px;
   top: -40px;
 }
 .html-inner-range {
   width: 95%;
-  height: 10px;
+  height: 100%;
   background-color: #ff0000;
+  border-radius: 1px;
 }
 .css-range {
   width: 80%;
   height: 10px;
   background-color: #fff;
   position: relative;
+  border:.3px solid #000;
+  border-radius: 2px;
 }
 .css-range p {
-  color: #fff;
   position: absolute;
   right: 0px;
   top: -40px;
 }
 .css-inner-range {
   width: 80%;
-  height: 10px;
+  height: 100%;
   background-color: #ff0000;
+  border-radius: 1px;
 }
 .js-range {
   width: 80%;
   height: 10px;
   background-color: #fff;
   position: relative;
+  border:.3px solid #000;
+  border-radius: 2px;
 }
 .js-range p {
   position: absolute;
-  color: #fff;
   right: 0px;
   top: -40px;
 }
 .js-inner-range {
   width: 55%;
-  height: 10px;
+  height: 100%;
   background-color: #ff0000;
+  border-radius: 1px;
+}
+#about_right_p {
+  font-size: 20px;
 }
 
 /* ranges */
