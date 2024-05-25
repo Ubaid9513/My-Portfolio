@@ -5,6 +5,10 @@ body {
   font-style: normal;
   background-color: rgb(225, 251, 251);
 }
+#background_orange {
+  background-color: #ff0000;
+  color: #fff;
+}
 /* home section start */
 #home {
   background-image: url("./images/wp6412485.webp");
@@ -52,7 +56,7 @@ body {
 
 .about_section {
   background-color: #f9f4f4;
-  box-shadow: 5px 5px 12px #ffffff;
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.15);
 }
 .about_h1 {
   color: #ff0000;
@@ -135,3 +139,13 @@ body {
 /* ranges */
 
 /* CLOSE ABOUT SECTION */
+/* start project SECTION */
+#project h1 {
+  color: #ff0000;
+  font-size: 3.5rem;
+}
+.project_cards:hover {
+  /* width: 19rem; */
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.15);
+}
+/* CLOSE project SECTION */
