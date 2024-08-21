@@ -1,0 +1,86 @@
+@media only screen and (max-width: 992px) {
+  .main-navbar {
+    display: flex;
+    justify-content: right;
+  }
+  .nav-ul {
+    text-align: center;
+    background-color: rgb(35, 34, 34), rgb(95, 97, 97);
+    background-blend-mode: multiply;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  #nav-ul a:hover:before {
+    width: 15%;
+  }
+  .about_left_personal_img {
+    height: 210px;
+  }
+  .about_left_personal_info p {
+    padding: 0px 0px 5px 55px;
+  }
+  .skills {
+    padding-top: 20px;
+  }
+  .about_section_hr {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #home_text {
+    position: absolute;
+    top: -25rem;
+  }
+}
+@media only screen and (max-width: 510px) {
+  /* #contactForm button {
+    height: 42px;
+    width: 35%;
+    } */
+}
+@media only screen and (max-width: 426px) {
+  .nav-name {
+    margin-left:1rem;
+  }
+  #about {
+    width: 85%;
+  }
+  .about_h1,
+  .skills h1,
+  #project h1 {
+    font-size: 2.8rem;
+  }
+  #contactSection h3 {
+    font-size: 2.5rem;
+  }
+  .home_text {
+    position: absolute;
+    top: -28rem !important;
+  }
+  #home_text h1 {
+    margin-left: 14px !important;
+  }
+  #home_text h1,
+  #home_text h3 {
+    margin: 0%;
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .about_left_personal_info p {
+    padding: 0px 0px 5px 29px;
+  }
+  #contactSection h3 {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 341px) {
+  #home_text h1,
+  #home_text h3 {
+    margin: 0%;
+    font-size: 20px;
+  }
+  .contact_right p {
+    font-size: 20px;
+  }
+}

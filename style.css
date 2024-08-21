@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: rgb(225, 251, 251);
+}
+#background_orange {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+/* home section start */
+
+#home {
+  background-image: url("./images/wp6412485.webp");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 83%;
+  background-attachment: fixed;
+}
+.nav-name {
+  /* background-color: aqua; */
+  margin-left: 3.5rem;
+}
+.bg-nav {
+  background: rgba(25, 23, 23, 0.32);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.nav-ul {
+  margin-left: 40%;
+  width: 58%;
+  justify-content: space-evenly;
+  /* background-color: aqua; */
+  /* text-align: right !; */
+}
+#nav-ul a {
+  position: relative;
+}
+#nav-ul a:before {
+  content: "";
+  position: absolute;
+  left: 10;
+  top: 80%;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.4s linear;
+}
+#nav-ul a:hover:before {
+  width: 70%;
+  background-color: #ff0000;
+  border-radius: 2px;
+}
+#Text_Container {
+  position: relative;
+}
+#home_text {
+  position: absolute;
+  top: -28rem;
+}
+#home_text h1 {
+  padding: 0%;
+  margin-left: 14px;
+}
+#home_text span {
+  color: #ff0000;
+}
+
+/* START ABOUT SECTION */
+
+#about {
+  width: 90%;
+  background-color: #f9f4f4;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15);
+}
+.about_h1 {
+  color: #ff0000;
+  font-size: 3.5rem;
+  font-family: "poppins";
+}
+.skills {
+  height: 300px;
+  position: relative;
+  font-family: "poppins";
+}
+.skills h1 {
+  color: #ff0000;
+  font-size: 3.5rem;
+}
+.skills li {
+  list-style-type: none;
+}
+/* ranges */
+.html-range {
+  width: 80%;
+  height: 10px;
+  background-color: #fff;
+  position: relative;
+  border: 0.3px solid #000;
+  border-radius: 2px;
+}
+.html-range p {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+}
+.html-inner-range {
+  width: 95%;
+  height: 100%;
+  background-color: #ff0000;
+  border-radius: 1px;
+}
+.css-range {
+  width: 80%;
+  height: 10px;
+  background-color: #fff;
+  position: relative;
+  border: 0.3px solid #000;
+  border-radius: 2px;
+}
+.css-range p {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+}
+.css-inner-range {
+  width: 80%;
+  height: 100%;
+  background-color: #ff0000;
+  border-radius: 1px;
+}
+.js-range {
+  width: 80%;
+  height: 10px;
+  background-color: #fff;
+  position: relative;
+  border: 0.3px solid #000;
+  border-radius: 2px;
+}
+.js-range p {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+}
+.js-inner-range {
+  width: 55%;
+  height: 100%;
+  background-color: #ff0000;
+  border-radius: 1px;
+}
+#about_right_p {
+  font-size: 20px;
+}
+
+/* ranges */
+/* CLOSE ABOUT SECTION */
+
+/* start project SECTION */
+
+#project {
+  padding: 0px 4%;
+}
+#project h1 {
+  color: #ff0000;
+  font-size: 3.5rem;
+}
+#project_cards {
+  display: flex;
+  justify-content: center;
+}
+.project_card:hover {
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15);
+}
+/* CLOSE project SECTION */
+/* start contact SECTION */
+/* #contactSection {
+  background-color: wheat;
+} */
+#contactSection h1 {
+  color: #ff0000;
+  font-size: 3.5rem;
+}
+#contactSection h3 {
+  color: #ff0000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0px;
+}
+/* #contactForm {
+  background-color: violet;
+} */
+#contactForm input {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  border: 1px solid #000;
+}
+#contactForm input:focus {
+  outline-color: #ff0000;
+}
+
+#contactForm textarea {
+  padding: 5px 10px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border: 1px solid #000;
+}
+#contactForm textarea:focus {
+  outline-color: #ff0000;
+}
+#contactForm button {
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  height: 42px;
+  width: 170px;
+  cursor: pointer;
+}
+.about_section_hr {
+  display: none;
+}
+#contactForm button:hover {
+  border: 3px solid #f17c7c;
+  background-color: #d50707;
+}
+.contact_right p {
+  margin-top: 1.5rem;
+  font-size: 22px;
+  /* color: #f25c5c; */
+}
+.contact_right i {
+  color: #ff0000;
+}
+.contact_social_icon i {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ff0000;
+  border-radius: 50%;
+  padding-top: 10px;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+}
+.contact_social_icon i:hover {
+  background-color: #ff0000;
+  color: #fff;
+  border: 4px solid #f17c7c;
+}
+/* CLOSE contact SECTION */
